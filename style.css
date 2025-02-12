@@ -1,0 +1,147 @@
+/* General Style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Comic Sans MS', sans-serif;
+    background-color: #ffe6f1;
+    color: #333;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #ff4081;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+button {
+    background-color: #ff4081;
+    color: white;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #ff1c5e;
+}
+
+input {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ff4081;
+    border-radius: 5px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #ff1c5e;
+}
+
+section {
+    margin-top: 20px;
+}
+
+/* Memory Jigsaw Section */
+#memoryImages {
+    display: flex;
+    flex-wrap: wrap; /* Makes sure images stay within the container */
+    justify-content: space-evenly; /* Spacing between images */
+    gap: 20px; /* Add gap between images */
+}
+
+.memory-image {
+    width: 200px; /* Set the width of the images */
+    height: 200px; /* Set the height of the images */
+    object-fit: cover; /* Ensures the images maintain their aspect ratio while filling the space */
+    border-radius: 10px; /* Optional: round the edges of the images */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional: add shadow for better visual appeal */
+}
+
+
+/* Final Proposal Styling */
+#finalProposal {
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    margin: 50px auto;
+    position: relative;
+}
+
+/* Emojis Section */
+.proposal-emoji {
+    font-size: 50px;
+    margin: 20px 0;
+}
+
+/* Inputs and Button Styling */
+#finalProposal input {
+    padding: 10px;
+    margin: 10px;
+    width: 60%;
+    font-size: 18px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+}
+
+#finalProposal button {
+    padding: 15px 30px;
+    font-size: 20px;
+    background-color: #ff5e5b; /* Soft pink color */
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#finalProposal button:hover {
+    background-color: #ff3e3a; /* Darker pink on hover */
+}
+
+/* Background Music */
+audio {
+    display: block;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Emojis Section */
+.proposal-emoji {
+    font-size: 80px;
+    margin: 20px 0;
+    text-align: center;
+    animation: emojiAnimation 3s ease-in-out infinite;
+}
+
+@keyframes emojiAnimation {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}

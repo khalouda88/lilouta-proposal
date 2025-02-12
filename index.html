@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Day Adventure: The Escape Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Valentine's Day Adventure: The Escape Game</h1>
+            <p>Complete each challenge to unlock the ultimate proposal, Lilouta!</p>
+        </header>
+
+        <!-- Start Game Button -->
+        <section id="startSection">
+            <button onclick="startGame()">Start the Game</button>
+        </section>
+
+        <!-- Love Letter Scramble (Advanced) -->
+        <section id="letterScramble" class="hidden">
+            <h2>Love Letter Scramble</h2>
+            <p>Unscramble the words to reveal a love letter to Lilouta:</p>
+            <p id="scrambledWords"></p>
+            <input type="text" id="scrambledAnswer" placeholder="Your answer">
+            <button onclick="checkLetterScramble()">Submit</button>
+        </section>
+
+        <!-- Emoji Puzzle (Advanced) -->
+        <section id="emojiPuzzle" class="hidden">
+            <h2>Emoji Puzzle</h2>
+            <p>Interpret the emojis and reveal this special memorie !</p>
+            <p id="emojiClue">🎾
+                💑
+                🏸 
+                ❤️</p>
+            <input type="text" id="emojiAnswer" placeholder="Your answer">
+            <button onclick="checkEmojiPuzzle()">Submit</button>
+        </section>
+
+        <!-- Memory Jigsaw (Advanced) -->
+        <section id="memoryJigsaw" class="hidden">
+            <h2>Memory Jigsaw</h2>
+            <p>rerange this memories to get the code  i will eplain to you in Irl don't worry</p>
+            <div id="memoryImages" class="image-container">
+                <img src="img/d.jpeg" alt="Memory 1" class="memory-image">
+                <img src="img/f.jpeg" alt="Memory 2" class="memory-image">
+                <img src="img/r.jpeg" alt="Memory 3" class="memory-image">
+            </div>
+            <button onclick="revealJigsawPuzzle()">Start Puzzle</button>
+        </section>
+
+        <!-- Secret Love Code (Advanced) -->
+        <section id="secretCode" class="hidden">
+            <h2>Secret Love Code</h2>
+            <p>Decipher this complex code: <code>/loc/month/date/loc/</code></p>
+            <input type="text" id="secretCodeAnswer" placeholder="Your answer">
+            <button onclick="checkSecretCode()">Submit</button>
+        </section>
+
+       <!-- Final Proposal -->
+<section id="finalProposal" class="hidden">
+    <h2>Congratulations! You've solved all the puzzles, Lilouta.</h2>
+    <p>Now, for the most important question...</p>
+    
+    <!-- Emojis for proposal -->
+    <div class="proposal-emoji">
+        💖🎉
+    </div>
+    
+    <!-- Input fields to answer questions -->
+    <input type="text" id="question1" placeholder="When i asked you  to be my GF?">
+    <input type="text" id="question2" placeholder="What's my favorite word for you?">
+    
+    <button onclick="revealProposal()">Submit and Reveal Proposal</button>
+    
+    <!-- Background Music -->
+    <audio id="proposalMusic" controls autoplay loop>
+        <source src="/img/Romantic Epilogue [Valentines Day Background Music Royalty Free, Emotional Piano Music for Video].mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+</section>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
