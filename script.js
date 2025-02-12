@@ -65,9 +65,7 @@ function revealProposal() {
     if (question1Answer === "01/13" && question2Answer === "lilouti") {
         alert('Will be my valentine , Lilouta? You are mine love you ❤️');
         
-        // Play the music if answers are correct
-        const music = document.getElementById('proposalMusic');
-        music.play();  // Start the music
+     
 
         // Display a custom message
         document.getElementById('finalProposal').innerHTML = "<h2>Yes! I'm yours forever, Lilouta! 💖🎉</h2>";
