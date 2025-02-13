@@ -62,7 +62,7 @@ function revealProposal() {
     const question2Answer = document.getElementById('question2').value.trim().toLowerCase();
 
     // Check if answers are correct
-    if (question1Answer === "01/13" && question2Answer === "lilouti") {
+    if (question1Answer === "13/01" && question2Answer === "lilouti") {
         alert('Will be my valentine , Lilouta? You are mine love you ❤️');
         
      
